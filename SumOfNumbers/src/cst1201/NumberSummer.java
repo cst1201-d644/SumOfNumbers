@@ -10,9 +10,10 @@ public class NumberSummer {
         will find the sum of 1, 2, 3, 4, ... 50.
          */
         Scanner keyboard=new Scanner(System.in);
-        int userinput=50;
+        int userinput;
         int sum=0;
-      
+      System.out.print("Enter a nonzero integer  ");
+      userinput=keyboard.nextInt();
        if (userinput>=0)
             while ( userinput>=0 ){
                 sum += userinput;
