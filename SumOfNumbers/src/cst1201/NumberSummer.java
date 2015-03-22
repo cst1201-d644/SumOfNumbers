@@ -1,39 +1,40 @@
 package cst1201;
 
 import java.util.Scanner;
+/**
+ *
+ *  Devya Gurung
+ */
 
 public class NumberSummer {
+
     private static int number;
 
     public static void main(String[] args) {
         /*
-        Write a program that asks the user for a positive nonzero integer value. 
-        The program should use a loop to get the sum of all the integers from 1 
-        up to the number entered. For example, if the user enters 50, the loop 
-        will find the sum of 1, 2, 3, 4, ... 50.
+         Write a program that asks the user for a positive nonzero integer value. 
+         The program should use a loop to get the sum of all the integers from 1 
+         up to the number entered. For example, if the user enters 50, the loop 
+         will find the sum of 1, 2, 3, 4, ... 50.
          */
-        
+
         // ask user for a positive nonzero integer value
-        System.out.print("Pleasr enter a positive non zero integer: ");
+        System.out.print("Please enter a positive non zero integer: ");
         Scanner scan = new Scanner(System.in);
         int maxNumber = scan.nextInt();
-        
-        if (maxNumber > 0) {
-            int sum = 0;
-            int numberToAdd = 1;
-            
-            while (numberToAdd <= maxNumber) {
-                System.out.print(numberToAdd++ + ", ");
-                //sum += maxNumber;
-            }
-            
-           System.out.println();
-            System.out.println( " The sume is : " + sum);
-            
+
+        while (maxNumber < 0) {
+            System.out.print("Please enter positive ingteger");
+            maxNumber = scan.nextInt();
         }
-        else {
-            System.out.println("Failure, please try again." );
+
+        int sum = 0;
+        for (int num = 1; num <= maxNumber; num++) {
+            sum += num;
         }
+
+        System.out.println("The sum is : " + sum);
+
     }
 
 }
