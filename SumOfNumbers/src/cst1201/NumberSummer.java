@@ -21,11 +21,12 @@ public class NumberSummer {
             int numberToAdd = 1;
             
             while (numberToAdd <= maxNumber){
-                System.out.println(numberToAdd++ + ", ");}
+                System.out.println(numberToAdd + ", ");
             
+            sum = sum += numberToAdd;
+            numberToAdd++;
             System.out.println();
-            System.out.println("The sum is: " + sum);
-//sum += numberToAdd 
+            System.out.println("The sum is: " + sum);}           
         }
         else {
             System.out.println("Failure, please try again.");
