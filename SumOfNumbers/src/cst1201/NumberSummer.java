@@ -1,5 +1,7 @@
 package cst1201;
 
+import java.util.Scanner;
+
 public class NumberSummer {
 
     public static void main(String[] args) {
@@ -9,6 +11,25 @@ public class NumberSummer {
         up to the number entered. For example, if the user enters 50, the loop 
         will find the sum of 1, 2, 3, 4, ... 50.
          */
+        //asks the user for a positive nonzero integer value.
+        System.out.print("Please enter a postitive non-zero integer: ");
+        Scanner scan = new Scanner(System.in);
+        int maxNumber = scan.nextInt();
+        
+        if (maxNumber > 0) {
+            int sum = 0; 
+            int numberToAdd = 1;
+            
+            while (numberToAdd <= maxNumber){
+                System.out.println(numberToAdd + ", ");
+            
+            sum = sum += numberToAdd;
+            numberToAdd++;
+            System.out.println();
+            System.out.println("The sum is: " + sum);}           
+        }
+        else {
+            System.out.println("Failure, please try again.");
+        }
     }
-
-}
+    }    
