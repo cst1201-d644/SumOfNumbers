@@ -22,8 +22,8 @@ public class SumOfNumbers {
 
 int num;
 
-String input1 = JOptionPane.showInputDialog("Enter a positive nonzero integer");
-num = Integer.parseInt(input1);
+String input = JOptionPane.showInputDialog("Enter a positive nonzero integer");
+num = Integer.parseInt(input);
 int sum = 0;
 
 while(num >= 1){
