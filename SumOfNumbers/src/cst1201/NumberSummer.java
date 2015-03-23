@@ -1,5 +1,5 @@
 package cst1201;
-
+import java.util.Scanner;
 public class NumberSummer {
 
     public static void main(String[] args) {
@@ -9,6 +9,21 @@ public class NumberSummer {
         up to the number entered. For example, if the user enters 50, the loop 
         will find the sum of 1, 2, 3, 4, ... 50.
          */
+        Scanner keyboard=new Scanner(System.in);
+        int userinput;
+        int sum=0;
+      System.out.print("Enter a nonzero integer  ");
+      userinput=keyboard.nextInt();
+       if (userinput>=0)
+            while ( userinput>=0 ){
+                sum += userinput;
+                System.out.println(userinput--);}
+       System.out.println(sum);
+                
+        
+                        
+                
+        
     }
-
+        
 }
