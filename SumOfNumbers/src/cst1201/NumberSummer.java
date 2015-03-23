@@ -1,9 +1,10 @@
 package cst1201;
 
 import java.util.Scanner;
+
 /**
  *
- *  Devya Gurung
+ * Devya Gurung
  */
 
 public class NumberSummer {
@@ -22,12 +23,8 @@ public class NumberSummer {
         System.out.print("Please enter a positive non zero integer: ");
         Scanner scan = new Scanner(System.in);
         int maxNumber = scan.nextInt();
-
-        while (maxNumber < 0) {
-            System.out.print("Please enter positive ingteger");
-            maxNumber = scan.nextInt();
-        }
-
+        
+               
         int sum = 0;
         for (int num = 1; num <= maxNumber; num++) {
             sum += num;
