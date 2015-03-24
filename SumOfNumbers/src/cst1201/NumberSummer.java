@@ -25,12 +25,19 @@ public class NumberSummer {
         int maxNumber = scan.nextInt();
         
                
-        int sum = 0;
-        for (int num = 1; num <= maxNumber; num++) {
-            sum += num;
-        }
+        if (maxNumber > 0) {
+            int sum = 0;
+            int numberToAdd = 1;
 
-        System.out.println("The sum is : " + sum);
+            while (numberToAdd <= maxNumber) {
+                sum += numberToAdd;
+                System.out.print(++numberToAdd + ", ");
+            }
+
+            System.out.println("The sum is : " + sum);
+        } else {
+            System.out.println("Failure, please try again.");
+        }
 
     }
 
